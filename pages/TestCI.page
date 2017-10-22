@@ -1,0 +1,5 @@
+<apex:page controller="testCI">
+    <apex:pageBlock >
+        <apex:outputText style="font-size:32px;" value="{!message}"/>
+    </apex:pageBlock>
+</apex:page>
