@@ -62,7 +62,9 @@
         <label>field1</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
-     <fullName>field3__c</fullName>
+    </fields>
+    <fields>
+        <fullName>field2__c</fullName>
         <description>date field</description>
         <externalId>false</externalId>
         <inlineHelpText>no help</inlineHelpText>
