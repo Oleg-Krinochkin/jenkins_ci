@@ -1,5 +1,5 @@
 public class testCI {
     public String getMessage(){
-		return 'Bitbucket CI test. User 1';
+		return 'Bitbucket CI test. Pull request.';
     }
 }
