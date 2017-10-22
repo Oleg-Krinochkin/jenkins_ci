@@ -1,0 +1,24 @@
+<project name="Sample usage of Salesforce Ant tasks" default="deploy" basedir="." xmlns:sf="antlib:com.salesforce">
+
+	<property file="build.properties"/>
+	<property environment="env"/>
+
+
+	<taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+		<classpath>
+			<pathelement location="../ant-salesforce.jar" />        	
+		</classpath>
+	</taskdef>
+	
+	<target name="retrieve">
+		<mkdir dir="retrieveUnpackaged"/>
+		<!-- Retrieve the contents into another directory -->
+		<sf:retrieve username="${sf.devorg_username}" password="${sf.devorg_password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="retrieveUnpackaged" unpackaged="unpackaged/package.xml"/>
+	</target>
+
+
+	<!-- Shows deploying code and running tests only within the org namespace -->
+	<target name="deploy">
+  		<sf:deploy username="${sf.devorg_username}" password="${sf.devorg_password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="./" rollbackOnError="true"  />
+	</target>
+</project>
