@@ -56,6 +56,17 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>New_Field_1__c</fullName>
+        <externalId>false</externalId>
+        <label>New_Field_1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>field1__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
