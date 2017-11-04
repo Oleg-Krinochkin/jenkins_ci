@@ -56,6 +56,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>New_Field_2__c</fullName>
+        <externalId>false</externalId>
+        <label>New_Field_2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>field1__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
